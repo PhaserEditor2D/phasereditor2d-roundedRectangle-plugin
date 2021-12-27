@@ -18,11 +18,11 @@ namespace phasereditor2d.roundedRectangle {
 
                 const ext = this.getExt(spec);
 
-                this.addResource(spec + "/RoundedRectangle", "data/" + spec + "/RoundedRectangle." + ext + ".txt");
-                this.addResource(spec + "/registerRoundedRectangleFactory", "data/" + spec + "/registerRoundedRectangleFactory." + ext + ".txt");
+                this.addResource(spec + "/RoundedRectangle", "data/" + spec + "/RoundedRectangle." + ext);
+                this.addResource(spec + "/registerRoundedRectangleFactory", "data/" + spec + "/registerRoundedRectangleFactory." + ext);
             }
 
-            this.addResource("roundedRectangle.d.ts", "data/roundedRectangle.d.ts.txt");
+            this.addResource("roundedRectangle.d.ts", "data/roundedRectangle.d.ts");
         }
 
         private getExt(spec: string) {

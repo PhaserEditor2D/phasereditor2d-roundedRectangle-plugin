@@ -249,10 +249,10 @@ var phasereditor2d;
                 super(roundedRectangle.RoundedRectanglePlugin.getInstance());
                 for (const spec of ["js", "js-module", "ts", "ts-module"]) {
                     const ext = this.getExt(spec);
-                    this.addResource(spec + "/RoundedRectangle", "data/" + spec + "/RoundedRectangle." + ext + ".txt");
-                    this.addResource(spec + "/registerRoundedRectangleFactory", "data/" + spec + "/registerRoundedRectangleFactory." + ext + ".txt");
+                    this.addResource(spec + "/RoundedRectangle", "data/" + spec + "/RoundedRectangle." + ext);
+                    this.addResource(spec + "/registerRoundedRectangleFactory", "data/" + spec + "/registerRoundedRectangleFactory." + ext);
                 }
-                this.addResource("roundedRectangle.d.ts", "data/roundedRectangle.d.ts.txt");
+                this.addResource("roundedRectangle.d.ts", "data/roundedRectangle.d.ts");
             }
             static getInstance() {
                 return this._instance ? this._instance : (this._instance = new RoundedRectangleCodeResources());

@@ -14,8 +14,8 @@ namespace phasereditor2d.roundedRectangle {
                 phaserTypeName: "RoundedRectangle",
                 typeName: "RoundedRectangle",
                 category: scene.SCENE_OBJECT_SHAPE_CATEGORY,
-                icon: scene.ScenePlugin.getInstance().getIconDescriptor(scene.ICON_BUILD) // RoundedRectanglePlugin.getInstance().getIconDescriptor(ICON_NINEPATCH)
-            })
+                icon: scene.ScenePlugin.getInstance().getIconDescriptor(scene.ICON_BUILD)
+            });
         }
 
         getBlockCellRenderer() {

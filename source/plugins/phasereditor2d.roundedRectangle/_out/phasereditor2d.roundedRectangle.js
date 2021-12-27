@@ -394,7 +394,7 @@ var phasereditor2d;
                     phaserTypeName: "RoundedRectangle",
                     typeName: "RoundedRectangle",
                     category: phasereditor2d.scene.SCENE_OBJECT_SHAPE_CATEGORY,
-                    icon: phasereditor2d.scene.ScenePlugin.getInstance().getIconDescriptor(phasereditor2d.scene.ICON_BUILD) // RoundedRectanglePlugin.getInstance().getIconDescriptor(ICON_NINEPATCH)
+                    icon: phasereditor2d.scene.ScenePlugin.getInstance().getIconDescriptor(phasereditor2d.scene.ICON_BUILD)
                 });
             }
             static getInstance() {
@@ -444,9 +444,6 @@ var phasereditor2d;
                 return this._instance;
             }
             registerExtensions(reg) {
-                // reg.addExtension(colibri.ui.ide.IconLoaderExtension.withPluginFiles(this, [
-                //     ICON_NINEPATCH
-                // ]));
                 reg.addExtension(roundedRectangle.RoundedRectangleExtension.getInstance());
                 reg.addExtension(new phasereditor2d.scene.ui.editor.properties.SceneEditorPropertySectionExtension(page => new roundedRectangle.RoundedRectangleSection(page)));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(() => roundedRectangle.RoundedRectangleCodeResources.getInstance().preload()));

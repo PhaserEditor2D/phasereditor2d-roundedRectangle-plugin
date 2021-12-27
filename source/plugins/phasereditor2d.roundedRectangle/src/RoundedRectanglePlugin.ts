@@ -18,10 +18,6 @@ namespace phasereditor2d.roundedRectangle {
 
         registerExtensions(reg: colibri.ExtensionRegistry) {
 
-            // reg.addExtension(colibri.ui.ide.IconLoaderExtension.withPluginFiles(this, [
-            //     ICON_NINEPATCH
-            // ]));
-
             reg.addExtension(RoundedRectangleExtension.getInstance());
 
             reg.addExtension(new scene.ui.editor.properties.SceneEditorPropertySectionExtension(

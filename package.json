@@ -1,0 +1,34 @@
+{
+	"name": "phasereditor2d-roundedrectangle-plugin",
+	"version": "1.0.0",
+	"description": "A Phaser Editor 2D plugin with RoundedRectangle game object support.",
+	"scripts": {
+		"start": "tsc -b -w source",
+		"build": "tsc -b source"
+	},
+	"devDependencies": {
+		"tslint": "^6.1.3",
+		"typescript": "^4.3.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PhaserEditor2D/phasereditor2d-roundedRectangle-plugin.git"
+	},
+	"keywords": [
+		"Phaser",
+		"Phaser Editor 2D",
+		"plugin",
+		"shape"
+	],
+	"author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/PhaserEditor2D/phasereditor2d-roundedRectangle-plugin/issues"
+	},
+	"homepage": "https://github.com/PhaserEditor2D/phasereditor2d-roundedRectangle-plugin#readme",
+	"phasereditor2d": {
+		"plugins": [
+			"dist"
+		]
+	}
+}

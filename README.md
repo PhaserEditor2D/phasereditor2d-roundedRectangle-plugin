@@ -7,7 +7,7 @@ This repository contains RoundedRectangle plugin for Phaser Editor 2D v3.
 The plugin is distributed as a NodeJS package:
 
 ```bash
-$ npm i --save-dev phasereditor2d-roundedRectangle-plugin
+$ npm i --save-dev phasereditor2d-roundedrectangle-plugin
 ```
 
 It is important that you install the package as a development dependency (`--save-dev`), because Phaser Editor 2D only searches for plugins in that section. Also, the `package.json` file should be in the root of the project.

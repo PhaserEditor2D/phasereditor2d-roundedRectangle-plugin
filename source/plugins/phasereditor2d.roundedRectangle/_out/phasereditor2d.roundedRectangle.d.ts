@@ -99,6 +99,7 @@ declare namespace phasereditor2d.roundedRectangle {
     import sceneobjects = phasereditor2d.scene.ui.sceneobjects;
     class RoundedRectangleEditorSupport extends sceneobjects.GameObjectEditorSupport<RoundedRectangle> {
         constructor(obj: RoundedRectangle, scene: scene.ui.Scene);
+        getPropertyDefaultValue(prop: sceneobjects.IProperty<any>): any;
         setInteractive(): void;
         getCellRenderer(): colibri.ui.controls.viewers.ICellRenderer;
         computeContentHash(): string;

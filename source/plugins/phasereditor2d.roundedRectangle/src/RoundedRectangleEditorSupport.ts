@@ -17,6 +17,16 @@ namespace phasereditor2d.roundedRectangle {
             );
         }
 
+        getPropertyDefaultValue(prop: sceneobjects.IProperty<any>) {
+
+            if (prop === sceneobjects.OriginComponent.originX || prop === sceneobjects.OriginComponent.originY) {
+
+                return 0;
+            }
+
+            return super.getPropertyDefaultValue(prop);
+        }
+
         setInteractive(): void {
 
             this.getObject().setInteractive();

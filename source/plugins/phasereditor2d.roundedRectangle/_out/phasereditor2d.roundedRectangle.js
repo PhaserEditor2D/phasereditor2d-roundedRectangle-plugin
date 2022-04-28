@@ -371,6 +371,12 @@ var phasereditor2d;
                 super(roundedRectangle.RoundedRectangleExtension.getInstance(), obj, scene);
                 this.addComponent(new sceneobjects.TransformComponent(obj), new sceneobjects.OriginComponent(obj), new sceneobjects.VisibleComponent(obj), new sceneobjects.AlphaSingleComponent(obj), new sceneobjects.SizeComponent(obj), new roundedRectangle.RoundedRectangleComponent(obj));
             }
+            getPropertyDefaultValue(prop) {
+                if (prop === sceneobjects.OriginComponent.originX || prop === sceneobjects.OriginComponent.originY) {
+                    return 0;
+                }
+                return super.getPropertyDefaultValue(prop);
+            }
             setInteractive() {
                 this.getObject().setInteractive();
             }

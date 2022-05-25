@@ -2,6 +2,8 @@
 
 This repository contains RoundedRectangle plugin for Phaser Editor 2D v3.
 
+*This RoundedRectangle implementation is based on a `Phaser.GameObjects.RenderTexture` and has a poor performance. For a better implementation, check the [phasereditor2d-roundedRectangleGraphics-plugin](https://github.com/PhaserEditor2D/phasereditor2d-roundedrectanglegraphics-plugin).*
+
 ## Install
 
 The plugin is distributed as a NodeJS package:
